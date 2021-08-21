@@ -5,11 +5,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql:///jtsys?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
     username: root
-    password: root   
+    password: 123456
 
   thymeleaf:
     prefix: classpath:/templates/pages/
     suffix: .html
-    
-mybatis: 
+
+mybatis:
   mapper-locations: mapper/sys/*.xml

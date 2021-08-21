@@ -131,8 +131,8 @@ public class SysUserServiceImpl implements SysUserService {
 		int rows=sysUserDao.insertObject(entity);
 		//4.保存用户与角色关系数据
 		int urows=sysUserRoleDao.insertObjects(entity.getId(), roleIds);
-		if(urows>0)
-		throw new ServiceException("关系数据保存失败");
+//		if(urows>0)
+//		throw new ServiceException("关系数据保存失败");
 		//5.返回结果
 		return rows;
 	}
